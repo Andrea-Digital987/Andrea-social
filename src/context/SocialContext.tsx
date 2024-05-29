@@ -1,0 +1,21 @@
+import React, { ReactNode,createContext, useState } from 'react'
+import ReactDOM from "react-dom/client";
+import { TSocialContext } from '../Utils/commonTypes';
+import { TData } from '../Utils/commonTypes'
+
+export const SocialContext = createContext<TSocialContext|null>(null)
+
+
+function SocialContextProvider({children}: {children:ReactNode}) {
+    
+    const [postsFetched , setPostsFetched] = useState<TData>()
+    
+    return (
+    <SocialContext.Provider value={{postsFetched ,setPostsFetched}}>
+      {children}
+    </SocialContext.Provider>
+  )
+}
+
+export default SocialContextProvider
+

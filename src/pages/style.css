@@ -1,0 +1,7 @@
+.home-page  {
+    flex:1;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

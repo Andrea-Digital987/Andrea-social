@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import SocialContextProvider from './context/SocialContext';
+
 import './App.css';
+import Layout from './Layout/Layout';
 
 function App() {
   return (
-    <div className='main-wrapper'>
-      <h1>Andrea social</h1>
-    </div>
+    <>
+    <SocialContextProvider>
+      <Layout/>
+    </SocialContextProvider>
+    </>
   );
 }
 

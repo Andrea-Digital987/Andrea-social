@@ -1,0 +1,5 @@
+.main-section   {
+    flex: 1;
+    display: flex;
+    background-color: rgba(169, 218, 241, 0.562);
+}

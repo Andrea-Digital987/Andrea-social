@@ -1,0 +1,12 @@
+.card-post  {
+    width: 450px;
+    background: rgba(17, 193, 221, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(17, 193, 221, 0.72);
+    display: flex;
+    padding: 5px;
+    margin:10px;
+}
