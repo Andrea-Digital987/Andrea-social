@@ -6,7 +6,7 @@ import Footer from '../organisms/footer/Footer'
 import { fetchData } from '../Utils/utilities'
 import { SocialContext } from '../context/SocialContext'
 import { TSocialContext } from '../Utils/commonTypes'
-
+import { InsertWindowContextProvider } from '../context/InsertWindowContext'
 
 function Layout() {
   const {setPostsFetched} = useContext(SocialContext) as TSocialContext;
@@ -16,7 +16,10 @@ function Layout() {
   ,[])
   return (
     <div className='main-wrapper'>
-      <Header/>
+      <InsertWindowContextProvider>
+        <Header/>
+      </InsertWindowContextProvider>
+      
         <Main/>
       <Footer/>
     </div>

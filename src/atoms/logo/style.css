@@ -1,0 +1,20 @@
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.logo h1{
+    font-size: 4rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+.second-title   {
+    display: flex;
+    justify-content: flex-end;
+}

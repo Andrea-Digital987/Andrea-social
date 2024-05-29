@@ -24,3 +24,8 @@ export type TPost = {
     skip: number
     limit: number 
   }
+
+  export type TInsertContext ={
+    opened:boolean;
+    setOpened:Function;
+  }

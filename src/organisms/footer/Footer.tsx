@@ -4,7 +4,8 @@ import  './style.css'
 function Footer() {
   return (
     <footer className='footer'>
-        Footer
+        <p>&copy;- {new Date().getFullYear()} Va'zapp - marchio registrato<br/>
+        realizzato da Andrea Di Pasquale</p>
     </footer>
   )
 }

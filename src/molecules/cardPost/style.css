@@ -6,7 +6,18 @@
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
     border: 1px solid rgba(17, 193, 221, 0.72);
+    
     display: flex;
+    flex-direction: column;
     padding: 5px;
     margin:10px;
+}
+.inner-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    align-content: space-around;
+    flex: 1;
 }

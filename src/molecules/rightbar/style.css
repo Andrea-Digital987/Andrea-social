@@ -1,0 +1,24 @@
+.right-menu {
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 15px;
+    
+}
+.inserisci-btn  {
+    background-color: #003cff;
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    color: #000000;
+    cursor: pointer;
+    height: 50px;
+    padding: 0 25px;
+    transition: all 200ms;
+    font-size: 700;
+    font-size: 1.4rem;
+}
+
+.inserisci-btn:hover{
+background-color: #AFE6C3;
+}

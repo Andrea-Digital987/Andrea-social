@@ -1,0 +1,13 @@
+.like-box   {
+    background: rgb(93, 163, 255);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgb(4, 108, 228);
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    justify-self:flex-end;
+}

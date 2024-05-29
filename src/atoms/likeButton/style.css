@@ -1,0 +1,12 @@
+.button-like{
+    width: 50px;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    transition: all 200ms;
+    cursor: pointer;
+
+}
+.button-like:hover {
+    font-size: 1.2rem;
+}

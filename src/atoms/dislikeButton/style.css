@@ -1,0 +1,12 @@
+.button-dislike{
+    width: 50px;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    transition: all 200ms;
+    cursor: pointer;
+
+}
+.button-dislike:hover {
+    font-size: 1.4rem;
+}
