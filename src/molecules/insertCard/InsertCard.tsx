@@ -2,14 +2,15 @@ import React , { useContext }  from 'react'
 import './style.css'
 import { TInsertContext } from '../../Utils/commonTypes'
 import { InsertWindowContext} from '../../context/InsertWindowContext'
-import {motion} from 'framer-motion'
+import {motion , AnimatePresence , useIsPresent} from 'framer-motion'
 import FormCard from '../form/FormCard'
 function InsertCard() {
   const {opened , setOpened} =useContext(InsertWindowContext) as TInsertContext
+  const isPresent = useIsPresent();
   const variants = {
     show: {
       opacity: 1,
-      y: 0,
+      height: 500,
       transition: {
         ease: 'easeOut',
         duration: 0.3,
@@ -17,16 +18,19 @@ function InsertCard() {
     },
     hide: {
       opacity: 0,
+      height:0
     },
   };
-  return (
-    <motion.div
-      variants={variants}
-      animate={opened ? 'hide' : 'show'} 
-      className='card-insert'>
-      <FormCard/>
-    </motion.div>
+ return (
+      <motion.div
+        variants={variants}
+        animate={opened ? 'show' : 'hide'} 
+        className='card-insert'>
+        <FormCard display={isPresent}/>
+      </motion.div>
+    
   )
+
 }
 
 export default InsertCard

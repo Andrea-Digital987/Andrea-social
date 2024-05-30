@@ -22,8 +22,9 @@ export function insertNewPost(newPost : TNewPost , callback:Function ,oldObj : T
             views: 0,
             userId:213541
     }
+    
     let newDateObj : TData = {
-        posts: [...oldObj.posts , newPostInsert],
+        posts: [newPostInsert , ...oldObj.posts],
         total : oldObj.total +1,
         skip: oldObj.skip+1,
         limit : oldObj.limit+1
