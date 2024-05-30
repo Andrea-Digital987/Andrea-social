@@ -1,0 +1,42 @@
+.form-card  {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+}
+
+.iconX-btn  {
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    color: rgb(0, 89, 255);
+    
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+}
+.submit-btn {
+    background-color: #003cff;
+    border-radius: 50px;
+    border-width: 0;
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    color: #000000;
+    cursor: pointer;
+    height: 50px;
+    padding: 0 25px;
+    transition: all 200ms;
+    font-size: 700;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+.submit-btn:hover{
+    background-color: #AFE6C3;
+    }
+#body{
+    padding: 15px;
+   height: 300px;
+}
+#title{
+    padding: 15px;
+    height: 40px;
+}

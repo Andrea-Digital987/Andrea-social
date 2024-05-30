@@ -6,7 +6,7 @@ import CardPost from '../molecules/cardPost/CardPost';
 
 function Home() {
   const {postsFetched} = useContext(SocialContext)as TSocialContext
-  console.log(postsFetched);
+  
   return (
     <section className='home-page'>
         {postsFetched?.posts && postsFetched?.posts.map((item ,index)=>(

@@ -9,9 +9,14 @@ import { TSocialContext } from '../Utils/commonTypes'
 import { InsertWindowContextProvider } from '../context/InsertWindowContext'
 
 function Layout() {
-  const {setPostsFetched} = useContext(SocialContext) as TSocialContext;
+  const {postsFetched , setPostsFetched} = useContext(SocialContext) as TSocialContext;
   useEffect(()=>{
-    fetchData(setPostsFetched)
+    if(localStorage.getItem('posts') !== null){
+      setPostsFetched(JSON.parse(localStorage.getItem('posts')||""))
+    }else{
+      console.log('entrato else')
+      fetchData(setPostsFetched)
+    }
   }
   ,[])
   return (

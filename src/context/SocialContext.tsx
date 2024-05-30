@@ -8,7 +8,12 @@ export const SocialContext = createContext<TSocialContext|null>(null)
 
 function SocialContextProvider({children}: {children:ReactNode}) {
     
-    const [postsFetched , setPostsFetched] = useState<TData>()
+    const [postsFetched , setPostsFetched] = useState<TData>({
+      posts:[],
+      limit:0,
+      skip:0,
+      total:0
+  })
     
     return (
     <SocialContext.Provider value={{postsFetched ,setPostsFetched}}>

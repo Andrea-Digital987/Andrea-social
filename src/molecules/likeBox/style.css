@@ -10,4 +10,8 @@
     align-items: center;
     height: 30px;
     justify-self:flex-end;
+    transition: all 200ms;
 }
+.like-box:hover{
+    background-color: #AFE6C3;
+    }

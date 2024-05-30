@@ -1,7 +1,6 @@
 import React from 'react'
 import './style.css'
 import { TPost } from '../../Utils/commonTypes'
-import LikeButton from '../../atoms/likeButton/LikeButton'
 import LikeBox from '../likeBox/LikeBox'
 function CardPost({item}: {item: TPost}) {
   return (

@@ -1,5 +1,5 @@
 export type TSocialContext = {
-    postsFetched ?: TData,
+    postsFetched: TData,
     setPostsFetched : Function
 }
 
@@ -28,4 +28,10 @@ export type TPost = {
   export type TInsertContext ={
     opened:boolean;
     setOpened:Function;
+  }
+
+  export type TNewPost = {
+    id: number
+    title: string
+    body: string
   }
