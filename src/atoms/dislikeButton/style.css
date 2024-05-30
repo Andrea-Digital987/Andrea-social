@@ -10,3 +10,6 @@
 .button-dislike:hover {
     font-size: 1.4rem;
 }
+.button-dislike:onclick {
+    font-size: 1.4rem;
+}
